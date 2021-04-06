@@ -30,12 +30,12 @@ rap = [
 ]
 
 faq = SimilarityMatchingSkill(data_path = 'bot_it.csv',
-                              x_col_name = 'Question', 
-                              y_col_name = 'Answer',
+                              x_col_name = 'Q', 
+                              y_col_name = 'A',
                               save_load_path = './model_bot_it',
                               config_type = 'tfidf_autofaq',
                               edit_dict = {},
-                              train =1)
+                              train =0)
 
 bert = build_model(configs.odqa.ru_odqa_infer_wiki_rubert_noans, download=True)
 
